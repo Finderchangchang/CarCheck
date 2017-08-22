@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_bg" />
+
+    <com.yinglan.alphatabs.AlphaTabsIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tabIconNormal="@mipmap/icon_query_d"
+            app:tabIconSelected="@mipmap/icon_query_s"
+            app:tabText="查询"
+            app:tabTextSize="10sp"
+            app:textColorNormal="@color/bottom_bg"
+            app:textColorSelected="@color/colorPrimary" />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            app:tabIconNormal="@mipmap/icon_report_d"
+            app:tabIconSelected="@mipmap/icon_report_s"
+            app:tabText="报告"
+            app:tabTextSize="10sp"
+            app:textColorNormal="@color/bottom_bg"
+            app:textColorSelected="@color/colorPrimary" />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            app:tabIconNormal="@mipmap/icon_me_d"
+            app:tabIconSelected="@mipmap/icon_me_s"
+            app:tabText="我"
+            app:tabTextSize="10sp"
+            app:textColorNormal="@color/bottom_bg"
+            app:textColorSelected="@color/colorPrimary" />
+
+    </com.yinglan.alphatabs.AlphaTabsIndicator>
+</LinearLayout>
